@@ -1,0 +1,152 @@
+@media (max-width: 540px) {
+   .header {
+      min-height: 50vh;
+   }
+   .header__sub-title {
+      span {
+         display: none;
+      }
+   }
+   .header__body {
+      margin-top: 100px;
+   }
+   .title {
+      font-size: 30px;
+      line-height: 46px;
+   }
+   .header__title {
+      font-size: 30px;
+      line-height: 34px;
+      strong {
+         font-size: 40px;
+         line-height: 46px;
+      }
+   }
+   .header__button {
+      width: 137px;
+      height: 47px;
+   }
+   .food-menu__item {
+      width: 290px;
+      height: 276px;
+   }
+   .food-menu__item {
+      &:nth-child(1),
+      &:nth-child(2) {
+         display: none;
+      }
+   }
+   .plus__descrip {
+      font-size: 18px;
+      line-height: 130%;
+   }
+   .plus__title {
+      font-size: 20px;
+      line-height: 130%;
+   }
+   .foods__img {
+      min-width: 290px;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+         width: 100%;
+         height: auto;
+      }
+   }
+   .food-menu__title {
+      font-size: 54px;
+      line-height: 62px;
+   }
+   .foods__row {
+      flex-wrap: wrap;
+   }
+   .foods__name {
+      font-size: 20px;
+      line-height: 25px;
+   }
+   .foods__dotes {
+      display: none;
+   }
+   .food-menu__item {
+      width: 290px;
+      height: 510px;
+      padding: 35px;
+      margin: 10px 0;
+   }
+   .food-menu__recomend {
+      width: 130px;
+      height: 36px;
+      font-size: 13px;
+      line-height: 18px;
+   }
+   .food-menu__icon {
+      width: 225px;
+      height: 225px;
+   }
+
+   .gallery {
+      &::before,
+      &::after {
+         display: none;
+      }
+   }
+   .gallery__img-big,
+   .gallery__img-small {
+      img {
+         width: auto;
+         height: 100%;
+      }
+      overflow: hidden;
+      width: 290px;
+      height: 314.07px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      margin: 10px auto;
+   }
+   .gallery__row {
+      flex-wrap: wrap;
+   }
+   .gallery__cook {
+      width: 287.88px;
+      height: 380px;
+   }
+   .footer {
+      height: 50vh;
+   }
+   .popup__content {
+      padding: 15px 30px;
+   }
+   .popup__title {
+      font-size: 22px;
+      line-height: 130%;
+   }
+   .popup__exit {
+      font-size: 22px;
+      top: 10px;
+      right: 10px;
+   }
+   .popup__desc {
+      font-size: 16px;
+      line-height: 130%;
+   }
+   .popup__button {
+      font-size: 14px;
+      max-width: 150px;
+      padding: 5px;
+      margin: 5px auto;
+      cursor: pointer;
+   }
+   .popup-img__wrapper{
+      padding: 15px;
+   }
+   .popup-img__img-block{
+      padding: 5px;
+   }
+   .footer__wrapper {
+      padding: 5px;
+   }
+}

@@ -1,0 +1,84 @@
+.foods {
+   padding: 140px 0;
+}
+/* 
+.foods__title {
+} */
+.foods__body {
+
+   margin-top: 140px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.foods__img {
+   margin: 0 auto;
+   width: auto;
+   height: 478px;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 3px 3px 10px 2px #000;
+} 
+.foods__menu {
+   margin: 0 auto;
+   margin-top: 30px;
+}
+.foods__item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.foods__icon {
+   width: 160px;
+   height: 160px;
+   margin: 30px 30px;
+   border-radius: 50%;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.5s;
+   box-shadow: 3px 3px 10px 0px #000;
+   flex: 0 0 auto;
+   img {
+      height: 100%;
+      width: 100%;
+   }
+}
+.foods__row{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.foods__name {
+   color: $font_color;
+   font-size: 26px;
+   line-height: 30px;
+   margin: 0 10px;
+}
+.foods__dotes {
+   border-top: 1px dashed #000;
+   height: 0;
+   width: 200px;
+   margin: 0 10px;
+}
+.foods__price {
+   color: $font_color;
+   font-size: 26px;
+   line-height: 30px;
+   margin: 5px 10px;
+}
+@media (max-width: 768px) {
+   .foods__dotes {
+      width: 30px;
+   }
+
+   .foods__icon {
+      width: 100px;
+      height: 100px;
+      margin: 10px 0px;
+   }
+}

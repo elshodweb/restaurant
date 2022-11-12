@@ -1,0 +1,242 @@
+.wrapper {
+   min-height: 100%;
+   min-width: 100%;
+}
+.header {
+   background: url(../img/header-image.jpg) center / cover no-repeat;
+   color: $theme_color;
+   padding: 60px 0 90px 0;
+   min-height: 100vh;
+   position: relative;
+}
+.header__row {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.header__logo {
+   z-index: 5;
+   flex: 0 1 auto;
+   height: 68px;
+   width: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+.logo__figur,
+.logo__figur::after {
+   display: block;
+   width: 48px;
+   height: 48px;
+   border: 3px solid $button_color;
+   box-sizing: border-box;
+   transform: rotate(-45deg);
+}
+.logo__figur::after {
+   content: "";
+   transform: translate(22.6px, 22.6px);
+} /* 
+.header__menu {
+} */ /* 
+.menu {
+
+} */
+
+.menu__icon {
+   display: none;
+   margin-right: 10px;
+   width: 30px;
+   height: 18px;
+   position: relative;
+   &::after,
+   &::before,
+   & span {
+      content: "";
+      position: absolute;
+      left: 0;
+      border-radius: 50px;
+      width: 30px;
+      height: 3px;
+      background: $button_color;
+      transition: all 0.7s;
+   }
+}
+.menu__icon {
+   z-index: 5;
+   &::before {
+      top: 0;
+   }
+   & span {
+      top: 50%;
+      transform: translate(0, -50%);
+   }
+   &::after {
+      bottom: 0;
+   }
+}
+@media (min-width: 678px) {
+   .menu__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .nav {
+      width: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .tel {
+      height: 65px;
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      flex-direction: column;
+      position: relative;
+      padding-left: 30px;
+      &::before {
+         height: 100%;
+         position: absolute;
+         content: "";
+         width: 1px;
+         background: $theme_color;
+         left: 0;
+         top: 0;
+      }
+   }
+   .menu__button {
+      margin-left: 10px;
+   }
+   .menu__tel {
+      margin-right: 45px;
+   }
+   .tel__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+}
+/* 
+.menu__nav {
+} */
+
+.menu__item {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 19px;
+   color: $theme_color;
+   display: block;
+   padding: 5px;
+}
+.menu__contact {
+   display: flex;
+   align-items: center;
+   justify-content: end;
+}
+.menu__icon-basket {
+   margin: 0 25px;
+   cursor: pointer;
+}
+.tel__icon {
+   width: 23px;
+   height: 23px;
+   margin-right: 10px;
+}
+.tel__numb {
+   font-weight: bold;
+   font-size: 18px;
+}
+.tel__text {
+   width: 155px;
+   font-size: 14px;
+   line-height: 19px;
+}
+
+/* 
+.button {
+} */
+.header {
+   position: relative;
+}
+.header__body {
+   margin-top: 200px;
+   max-width: 570px;
+   text-align: center;
+   text-shadow: 3px 3px 5px #000, 0px 0px 5px #000;
+}
+.header__title {
+   color: $strong-font_color;
+   font-size: 50px;
+   line-height: 57px;
+   strong {
+      display: block;
+      font-size: 80px;
+      line-height: 92px;
+   }
+}
+.header__sub-title {
+   font-size: 18px;
+   line-height: 25px;
+   color: $theme_color;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 12px;
+   div {
+      margin: 0 8px;
+   }
+   span {
+      display: block;
+      width: 61px;
+      height: 2px;
+      background: $theme_color;
+   }
+}
+.header__button {
+   margin: 21px auto 90px auto;
+   letter-spacing: 2px;
+}
+
+@media (max-width: 900px) {
+   .menu__contact {
+      display: none;
+   }
+   .header {
+      padding: 20px 0 90px 0;
+   }
+}
+@media (max-width: 678px) {
+   .header {
+      padding: 10px 0 90px 0;
+   }
+   .logo__figur,
+   .logo__figur::after {
+      width: 32px;
+      height: 32px;
+   }
+
+   .logo__figur::after {
+      content: "";
+      transform: translate(16px, 16px);
+   }
+
+   .menu__contact {
+      display: block;
+   }
+
+   .menu__icon {
+      display: block;
+   }
+   /* 
+.header__body{
+} */
+   .header__title {
+      font-size: 50px;
+      line-height: 54px;
+      strong {
+         font-size: 60px;
+         line-height: 66px;
+      }
+   }
+}
